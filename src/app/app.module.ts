@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { EmployeesComponent } from './pages/employees/employees.component';
 import { NexteventComponent } from './pages/nextevent/nextevent.component';
@@ -15,7 +16,8 @@ import { NexteventComponent } from './pages/nextevent/nextevent.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule    
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

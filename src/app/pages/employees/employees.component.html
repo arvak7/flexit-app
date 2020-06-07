@@ -1,1 +1,16 @@
-<p>employees works!</p>
+
+
+<table *ngIf="employees.length > 0" class="table mt-3 animated fadeIn faster">
+    <thead class="thead-dark">
+        <tr>            
+            <th scope="col">Name</th>
+            <th scope="col">LastEnventDate</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees; let i = index">
+            <th scope="row">{{employee.name}}</th>
+            <td>{{employee.lastEventDate}}</td>                                
+        </tr>
+</table>
