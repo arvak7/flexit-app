@@ -1,1 +1,7 @@
-<p>nextevent works!</p>
+<span class="badge-pill badge-info">Next event list</span>
+
+<ul *ngFor="let employee of employees; let i = index">
+    <li *ngIf="employee.lastEventDate == null">
+        {{employee.name}}
+    </li>
+</ul>    

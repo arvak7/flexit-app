@@ -10,7 +10,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let employee of employees; let i = index">
-            <th scope="row">{{employee.name}}</th>
+            <th *ngIf="employee.lastEventDate != null" scope="row">{{employee.name}}</th>
             <td>{{employee.lastEventDate}}</td>                                
         </tr>
 </table>
